@@ -11,7 +11,9 @@ blueprint:
         device:
           integration: zha
           manufacturer: LUMI
-          model: lumi.remote.b286acn01
+          entity:
+            domain: sensor
+            device_class: battery
     button_single_press_left:
       name: Single Press Left
       description: Action to run on single press
